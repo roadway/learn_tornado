@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Tornado & Jinja2</title></head>
+    <body>        
+		<p>使用Jinja2模板传递的render参数a={{a}};b={{b}};c={{c}};<br>t={{t}}</p>
+		<p>使用Jinja2模板传递的HTTPServerRequest参数(逐级获得):<br>
+			settings={{settings}};<br><br>
+			request={{request}};<br><br>			
+			request.headers={{headers}}<br><br>
+			headers['host']={{headers['host']}}<br>
+		</p>
+		<h1>Enter terms below.</h1>
+        <form method="post" action="/poem">
+        <p>Plural noun<br><input type="text" name="noun1"></p>
+        <p>Singular noun<br><input type="text" name="noun2"></p>
+        <p>Verb (past tense)<br><input type="text" name="verb"></p>
+        <p>Noun<br><input type="text" name="noun3"></p>
+        <input type="submit">
+        </form>
+    </body>
+</html>
